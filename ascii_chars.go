@@ -7,7 +7,8 @@ type Style string
 
 var (
 	// ASCII escape character
-	ESC Style = "\x1B"
+	ESC   Style = "\x1B"
+	Reset Style = "\x1B[0m"
 	// Text Decorations
 	Bold          Style = "\x1B[1m"
 	Dim           Style = "\x1B[2m"
