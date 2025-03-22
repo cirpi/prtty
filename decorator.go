@@ -26,6 +26,6 @@ func (d *decorator) String(str string) string {
 	for _, style := range d.styles {
 		styleString.WriteString(string(style))
 	}
-	//styleString.WriteString(string(Reset))
+	styleString.WriteString(string(Reset))
 	return fmt.Sprintf("%s%s", styleString.String(), str)
 }
